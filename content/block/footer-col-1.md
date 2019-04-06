@@ -1,3 +1,7 @@
-#### Footer col 1
+#### Om kursen
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Mer information om kursen Objektorienterade webbteknologier (oophp):
+
+* [Kursens hemsida](https://dbwebb.se/kurser/oophp-v5)
+* [Kursforum](https://dbwebb.se/forum/viewforum.php?f=37)
+* [Kursrepo på GitHub](https://github.com/dbwebb-se/databas)

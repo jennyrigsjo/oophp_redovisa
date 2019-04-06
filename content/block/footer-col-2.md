@@ -1,3 +1,7 @@
-#### Footer col 2
+#### Kontakt
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Säg hej till Jenny:
+
+* [Facebook](https://www.facebook.com/JennyRigsjo)
+* [LinkedIn](https://www.linkedin.com/in/jennyrigsjo/)
+* [GitHub](https://github.com/jennyrigsjo)
