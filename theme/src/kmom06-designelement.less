@@ -1,0 +1,217 @@
+/*!
+ * "Alice" stylesheet for kmom06.
+ *
+ * This stylesheet is for the course 'design' and kmom06. It is based on the
+ * story "Alice in Wonderland" by Lewis Carroll and uses images from the
+ * live-action film of the same name by Tim Burton.
+ */
+
+
+
+ /**
+ * Import base theme/stylesheet
+ */
+@import "kmom06.less";
+
+
+
+/**
+ * Theme-specific styles
+ */
+
+/* Colors and fonts */
+
+@bodyBgColor: #000000; //black
+//@textColor: #ffffff; //white
+@textColor: #e8e8e8;  //Very light grey
+
+@brightAliceBlue: #00CEDF;
+@mutedAliceBlue: #1B879D;
+//@purple: #6F2AB1;
+// @red: #BE271B;
+// @yellow: #E6CA29;
+
+@logoFont: 'Alice in Wonderland', @fontFamilyGaramond;
+@fontFamilyHeadings: 'Mystery Quest', @fontFamilyGaramond;
+@fontFamilyBody: @fontFamilyHelveticaNeue;
+
+@font-face {
+    font-family: 'Alice in Wonderland';
+    src: url('fonts/alice_in_wonderland/Alice_in_Wonderland_3.ttf');
+}
+
+@font-face {
+    font-family: 'Mystery Quest';
+    src: url('fonts/mystery-quest/MysteryQuest-Regular.ttf');
+}
+
+/* Base elements */
+
+
+html {
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("../img/theme/cheshire-cat.jpg");
+    background-size: cover;
+}
+
+body {
+    background-color: transparent;
+}
+
+blockquote {
+   border-left: 2px solid @brightAliceBlue;
+}
+
+code {
+    background-color: @brightAliceBlue;
+    color: @bodyBgColor;
+}
+
+/* Header */
+
+.region-header {
+    background-color: @mutedAliceBlue;
+    border-bottom: 3px solid @brightAliceBlue;
+    margin-bottom: @magicNumber * 0.5;
+}
+
+/* Header logo */
+
+.site-logo-text a {
+    color: @bodyBgColor;
+    font-size: 6em;
+    text-shadow: 4px 4px 4px @brightAliceBlue;
+}
+
+/* Header navbar */
+
+.region-header-col-2 a {
+    color: @bodyBgColor;
+    font-family: @logoFont;
+    letter-spacing: 2px;
+}
+
+.rm-desktop li a {
+    color: @bodyBgColor;
+}
+
+.rm-desktop li:hover a {
+    text-decoration: underline;
+}
+
+.rm-desktop li:hover > ul {
+    border: 1px solid @mutedAliceBlue;
+    background-color: @brightAliceBlue;
+}
+
+.rm-desktop li:hover > ul li {
+    box-shadow: 0 0 1px @mutedAliceBlue;
+}
+
+.rm-desktop li > ul li:hover {
+    background-color: @mutedAliceBlue;
+}
+
+/* Flash image */
+
+.inner-wrap-flash {
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+}
+
+.region-flash {
+    background-image: url("../img/theme/alice.jpg");
+    background-position: center;
+    width: @magicNumber * 7;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px double @brightAliceBlue;
+    box-shadow: 0 0 60px rgba(0,0,0,0.9) inset;
+}
+
+/* Main tables of content (incl. blog) */
+
+.block.toc,
+.block.blog-toc {
+    border: 1px solid @mutedAliceBlue;
+    //box-shadow: 5px 10px @yellow;
+}
+
+.toc h4,
+.blog-toc h4 {
+    background-color: @mutedAliceBlue;
+    color: @textColor;
+}
+
+.toc h4,
+.blog-toc h4,
+.toc li a {
+    border-bottom: 1px solid @mutedAliceBlue;
+}
+
+.toc:last-child,
+.blog-toc:last-child {
+    border-bottom: none;
+}
+
+.blog-toc ul,
+.article-toc ul {
+    background-color: @bodyBgColor;
+}
+
+.toc li:hover,
+.toc li.selected {
+    background-color: @brightAliceBlue;
+}
+
+.toc li:hover a,
+.toc li.selected a {
+    background-color: @brightAliceBlue;
+    color: @bodyBgColor;
+}
+
+/* Sidebars */
+
+.region-sidebar-right .block {
+    background-color: @mutedAliceBlue;
+}
+
+.region-sidebar-right h4 {
+    border-bottom: 1px solid transparent;
+}
+
+/* Author byline */
+
+.author-byline {
+    border-top: 1px solid @mutedAliceBlue;
+    border-bottom: 1px solid @mutedAliceBlue;
+}
+
+/* Footer */
+
+.region-footer {
+    border-top: 3px solid @brightAliceBlue;
+    background-color: @mutedAliceBlue;
+    color: @bodyBgColor;
+}
+
+.region-footer h4 {
+    border-color: @bodyBgColor;
+}
+
+.region-footer a {
+    color: @bodyBgColor;
+}
+
+.region-footer a:hover {
+    color: @textColor;
+    text-decoration: underline;
+}
+
+.footer-column-wrapper {
+    border-bottom: 1px solid @bodyBgColor;
+}

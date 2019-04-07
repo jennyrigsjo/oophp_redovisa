@@ -1,0 +1,80 @@
+/*!
+ * Dark stylesheet for kmom06.
+ *
+ * This stylesheet is for the course 'design' and kmom06. It has a dark background
+ * and lighter-colored text, which makes it gentler on the eyes and suitable for use
+ * at night and in other situations with low lighting.
+ */
+
+
+
+ /**
+ * Import base theme/stylesheet
+ */
+@import "kmom06.less";
+
+
+
+/**
+ * Theme-specific styles
+ */
+
+/* Colors and fonts */
+
+@bodyBgColor: #000000; //Black
+@textColor: #e8e8e8;  //Very light grey
+@complementaryColor: #9400d3; //"Dark violet"
+@complementaryColor2: #342434; //"Hunter green" (but looks purple brown-ish)
+
+@fontFamilyHeadings: 'Neogrey', @fontFamilyGaramond;
+@fontFamilyBody: @fontFamilyHelveticaNeue;
+
+@font-face {
+    font-family: 'Neogrey';
+    src: url('fonts/neogrey/NeogreyMedium.otf');
+}
+
+/* Base elements */
+
+code {
+    background-color: @complementaryColor2;
+    border: none;
+}
+
+/* Icons */
+
+.icon {
+    color: @complementaryColor2;
+}
+
+/* Header navbar */
+
+.region-header-col-2 a {
+    font-family: 'Kanit';
+}
+
+/* Sidebars */
+
+.region-sidebar-right .block {
+    background-color: transparent;
+}
+
+/* Footer */
+
+.region-footer {
+    border-top: 2px solid @complementaryColor;
+    background-color: @complementaryColor2;
+    color: @textColor;
+}
+
+.region-footer h4 {
+    border-color: @textColor;
+}
+
+.region-footer a {
+    color: @textColor;
+}
+
+.footer-column-wrapper {
+    border-bottom: 1px solid @textColor;
+}

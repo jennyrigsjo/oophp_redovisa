@@ -1,0 +1,66 @@
+/*!
+ * Minimalistic stylesheet for kmom06.
+ *
+ * This stylesheet is for the course 'design' and kmom06. It has a monochromatic
+ * (black and white) color scheme, simple styling and contains only
+ * sans-serif fonts.
+ */
+
+
+
+ /**
+ * Import base theme/stylesheet
+ */
+@import "kmom06.less";
+
+
+
+/**
+ * Theme-specific styles
+ */
+
+/* Colors and fonts */
+
+@bodyBgColor: #fdfdfd; //"off-white"
+@textColor: #151112; //very dark grey, same as flash image
+@complementaryColor: #aeaeae; // medium grey
+
+@logoFont: 'Moon', @fontFamilyCalibri;
+@fontFamilyHeadings: @fontFamilyCalibri;
+@fontFamilyBody: @fontFamilyHelveticaNeue;
+
+@font-face {
+    font-family: 'Moon';
+    src: url('fonts/moon/Moon2.0-Regular.otf');
+}
+
+/* Header logo */
+
+.site-logo-text-icon img,
+.region-flash {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.site-logo-text a {
+    color: @textColor;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: none;
+}
+
+/* Header navbar */
+
+.region-header-col-2 a {
+    font-family: @fontFamilyCalibri;
+}
+
+/* Sidebars */
+
+.region-sidebar-right .block {
+    background-color: transparent;
+}
+
+.region-sidebar-right h4 {
+    border-bottom: 1px solid @complementaryColor;
+}

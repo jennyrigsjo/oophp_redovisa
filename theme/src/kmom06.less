@@ -1,0 +1,112 @@
+/*!
+ * Base stylesheet for kmom06.
+ *
+ * This stylesheet is for the course 'design' and kmom06. It serves as
+ * the base theme on which the other stylesheets for this kmom are built.
+ */
+
+
+
+ /**
+ * Normalize and reset the style.
+ */
+@import "normalize.css/normalize.less";
+
+
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+
+
+/**
+ * Import the typographic grid.
+ */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+
+
+/**
+ * Import the vertical grid.
+ */
+@import "@desinax/vertical-grid/less/grid.less";
+
+
+
+/**
+ * Import the module @desinax/figure
+ */
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
+
+
+
+/**
+ * Base styles to affect HTML elements on a general scale.
+ */
+@import "base/kmom06/base06.less";
+
+
+
+/**
+ * Layout styles for general structure of header, navbar, main, footer
+ * and other regions of the page, including route specific styles.
+ */
+@import "layout/kmom06/layout06.less";
+
+
+
+/**
+ * Internal, self-contained modules, saved in the directory 'module/'.
+ */
+@import "module/kmom06/module06.less";
+
+
+
+/**
+ * Responsive base styles
+ */
+//@import "base/kmom05/responsive05.less";
+
+
+
+/**
+ * Responsive menu
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+//@import "@desinax/responsive-menu/less/media-queries.less";
+
+
+
+/**
+ * Responsive layout styles
+ */
+@import "layout/kmom06/responsive06.less";
+
+
+
+/**
+ * Styles to highlight regions in the layout, useful for styling purposes.
+ * Add '?regions' to the current URI to see the layout of each region.
+ */
+@import "layout/regions.less";
+
+
+
+/**
+ * This section contains 'override styles', i.e. style rules needed to override/
+ * make exceptions to other style rules set higher up.
+ */
+ .rm-desktop li:hover>ul {
+    background-color: @bodyBgColor;
+}
+
+h1 {
+    margin-bottom: 23px;
+}

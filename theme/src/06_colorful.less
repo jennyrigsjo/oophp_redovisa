@@ -1,0 +1,155 @@
+/*!
+ * Colorful stylesheet for kmom06.
+ *
+ * This stylesheet is for the course 'design' and kmom06. It has a triadic color
+ * scheme, some decorative styling and contains s few custom fonts.
+ */
+
+
+
+ /**
+ * Import base theme/stylesheet
+ */
+@import "kmom06.less";
+
+
+
+/**
+ * Theme-specific styles
+ */
+
+/* Colors and fonts */
+
+@bodyBgColor: #FFFFFF; //white
+@textColor: #333; //dark grey
+@triadicColor1: #915C83; //fuchsia (purple)
+@triadicColor2: #5C6B34; //moss green
+@triadicColor2Transparent: rgba(92, 107, 52, 0.2); //transparent shade of @triadicColor2
+@triadicColor3: #345C6B; //petroleum blue
+
+@logoFont: 'Unique', @fontFamilyGaramond;
+@fontFamilyHeadings: 'Elsie', @fontFamilyGaramond;
+@fontFamilyBody: @fontFamilyHelveticaNeue;
+
+@font-face {
+    font-family: 'Unique';
+    src: url('fonts/unique/Unique.ttf');
+}
+
+@font-face {
+    font-family: 'Elsie';
+    src: url('fonts/elsie/Elsie-Regular.ttf');
+}
+
+/* Base elements */
+
+blockquote {
+   border-left: 2px solid @triadicColor2;
+}
+
+code {
+    background-color: @triadicColor2Transparent;
+}
+
+img {
+    filter: drop-shadow(4px 4px 2px rgba(92, 107, 52, 0.5)); //semi-transparent shade of @triadicColor2 (green)
+}
+
+/* Header logo */
+
+.site-logo-text a {
+    color: @triadicColor1;
+    text-shadow: 4px 4px 4px rgba(145, 92, 131, 0.5);
+    text-transform: uppercase;
+}
+
+// .site-logo-text-icon img {
+//     filter: hue-rotate(210deg);
+// }
+
+/* Header navbar */
+
+.rm-desktop li a {
+    color: @triadicColor3;
+    font-family: @fontFamilyCalibri;
+}
+
+.rm-desktop li:hover a {
+    color: @triadicColor1;
+}
+
+.rm-desktop li:hover > ul {
+    border: 1px solid @triadicColor2;
+    background-color: #dee1d6;
+}
+
+.rm-desktop li:hover > ul li {
+    box-shadow: 0 0 1px @triadicColor2;
+}
+
+/* Flash image */
+
+.inner-wrap-flash {
+    padding: 5px 0;
+    border-top: 1px solid @textColor;
+    border-bottom: 1px solid @textColor;
+}
+
+/* Main tables of content */
+
+.block.toc,
+.block.blog-toc {
+    border: 1px solid @triadicColor3;
+    box-shadow: 4px 4px 4px rgba(92, 107, 52, 0.5); //semi-transparent shade of @triadicColor2 (green)
+}
+
+.toc h4,
+.blog-toc h4 {
+    background-color: @triadicColor1;
+    color: @bodyBgColor;
+}
+
+.toc h4,
+.blog-toc h4,
+.toc li a {
+    border-bottom: 1px solid @triadicColor3;
+}
+
+.toc:last-child {
+    border-bottom: none;
+}
+
+.toc li:hover,
+.toc li.selected {
+    background-color: @triadicColor3;
+}
+
+.toc li:hover > a,
+.toc li.selected > a {
+    color: @bodyBgColor;
+}
+
+/* Sidebars */
+
+.region-sidebar-right .block {
+    background-color: @triadicColor2Transparent;
+}
+
+.region-sidebar-right h4 {
+    border-bottom: 1px solid transparent;
+}
+
+/* Author byline */
+
+.author-byline {
+    border-top: 1px solid @triadicColor2;
+    border-bottom: 1px solid @triadicColor2;
+    background-color: @triadicColor2Transparent;
+}
+
+/* Footer */
+
+.region-footer {
+    border-top: 2px solid @triadicColor1;
+    background-color: @triadicColor3;
+}

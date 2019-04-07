@@ -1,0 +1,289 @@
+/************************************!
+           Modules
+*************************************/
+
+/* Header logo */
+
+.site-logo-text a {
+    display: flex;
+    justify-content: center;
+    font-family: @logoFont;
+    font-size: 3em;
+    color: @complementaryColor;
+    text-decoration: none;
+    text-shadow: 4px 4px 4px #a9a9a9;
+}
+
+
+
+/* Header navbar */
+
+.region-header-col-2 a {
+    display: inline-block;
+    font-size: 20px;
+    font-family: @fontFamilyGaramond;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 20px;
+}
+
+
+
+/* Flash image */
+
+.inner-wrap-flash {
+    padding: 5px 0;
+    border-top: 1px solid @textColor;
+    border-bottom: 1px solid @textColor;
+}
+
+.region-flash {
+    background-image: url("../img/theme/code-is-poetry.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+/* Breadcrumb navigation */
+
+.breadcrumb-list li {
+    display: inline-block;
+}
+
+.breadcrumb-list li~li:before {
+    content: ' / ';
+}
+
+.breadcrumb-list a {
+    text-decoration: none;
+}
+
+.breadcrumb-list a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Main links */
+
+.outer-wrap-main p > a {
+    color: #0000ff; /* Blue */
+    text-decoration: none;
+}
+
+.outer-wrap-main p > a:hover {
+    color: #9f00c5; /* Purple */
+    text-decoration: underline;
+}
+
+
+
+/* Main tables of content */
+
+.block.toc,
+.block.blog-toc {
+    border: 1px solid @textColor;
+}
+
+.toc,
+.blog-toc,
+.toc h4,
+.blog-toc h4 {
+    padding-inline-start: 0;
+}
+
+.toc,
+.blog-toc,
+.toc li {
+    text-align: center;
+}
+
+.toc h4,
+.blog-toc h4 {
+    background-color: @textColor;
+    color: @bodyBgColor;
+}
+
+.toc a {
+    display: block;
+    text-decoration: none;
+}
+
+.toc h4,
+.blog-toc h4,
+.toc li a {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: @magicNumber;
+    padding-bottom: @magicNumber - 1;
+    border-bottom: 1px solid @textColor;
+}
+
+.toc:last-child {
+    border-bottom: none;
+}
+
+.toc li:hover,
+.toc li.selected {
+    background-color: @complementaryColor;
+}
+
+.toc li:hover > a {
+    text-decoration: none;
+}
+
+.toc .level-0,
+.toc .section-header {
+    text-transform: uppercase;
+}
+
+
+
+/* Main previous/next links */
+
+.next-previous {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.next-previous .previous,
+.next-previous .next {
+    display: inline-block;
+}
+
+.next-previous a {
+    text-decoration: none;
+}
+
+.next-previous a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Sidebars */
+
+.region-sidebar-right .block {
+    background-color: rgba(229,26,83, 0.1);
+}
+
+
+
+/* Blog */
+
+.blog-list-item .meta-header,
+.blog-post .meta-header {
+    font-style: italic;
+}
+
+.sidebar-right-header,
+.sidebar-right-header-text {
+    text-align: center;
+}
+
+figure.frame {
+    border: solid 1px @textColor;
+}
+
+figure.frame img {
+    outline: solid 1px #efefef;
+    outline-offset: 10px;
+    filter: none;
+}
+
+/* Stylechooser */
+
+.stylechooser fieldset {
+    .nullMargins();
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding-left: @magicNumber;
+    padding-right: @magicNumber;
+    padding-top: @magicNumber;
+    padding-bottom: @magicNumber + @fontSizeBody;
+}
+
+.stylechooser legend {
+    margin-bottom: @magicNumber;
+}
+
+.stylechooser table {
+    border-spacing: 0;
+}
+
+
+
+/* Author byline */
+
+.author-byline {
+    display: flex;
+    border-top: 1px solid @complementaryColor;
+    border-bottom: 1px solid @complementaryColor;
+}
+
+.author-byline a {
+    display: inline;
+}
+
+.author-byline figure,
+.author-byline p {
+    padding-top: @magicNumber;
+}
+
+.author-byline figcaption {
+    font-size: 0.9em;
+}
+
+
+
+/* Footer */
+
+.region-footer {
+    border-top: 2px solid @complementaryColor;
+    background-color: @textColor;
+    color: @bodyBgColor;
+}
+
+.region-footer h4 {
+    border-color: @bodyBgColor;
+}
+
+.region-footer ul {
+    padding-inline-start: 0;
+    list-style-type: circle;
+}
+
+.region-footer li {
+    margin-left: 1em;
+    margin-bottom: 10px;
+}
+
+.region-footer a {
+    text-decoration: none;
+    color: @bodyBgColor;
+}
+
+.region-footer a:hover {
+    text-decoration: underline;
+}
+
+.region-footer .fab.fa-facebook-square,
+.region-footer .fab.fa-linkedin,
+.region-footer .fab.fa-github-square {
+    font-size: 2em;
+    margin-right: 15px;
+}
+
+.footer-column-wrapper {
+    border-bottom: 1px solid @bodyBgColor;
+}
+
+.site-footer {
+    text-align: center;
+}
