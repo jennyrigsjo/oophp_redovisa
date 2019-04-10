@@ -15,6 +15,14 @@ Här är en sida `content/lek/markdown.md`, bara för att visa hur du länkar ti
 * [Testsida `lek/markdown`](lek/markdown)
 
 
+Ytterligare en testsida i `content/` {#ts}
+---------------------------
+
+Här är ytterligare en sida ,`content/lek/markdown2.md`, bara för att testa att det verkligen fungerar. Sidan nås via `lek/markdown2`.
+
+* [Testsida `lek/markdown2`](lek/markdown2)
+
+
 
 Testroute {#te}
 ---------------------------
@@ -24,8 +32,18 @@ Du kan skriva egna routes i filen `router/000_lek.php`, där finns några enklar
 * [Hello world (utanför me-sidan)](lek/hello-world)
 * [Hello world som JSON](lek/hello-world-json)
 * [Hello world (inuti me-sidan)](lek/hello-world-page)
+* [Länk till en testsida](lek/test-page)
 
 Du kan även skapa nya filer under `router/`, de läses in i ordning.
+
+
+
+Ytterligare en testroute {#te}
+---------------------------
+
+Då ska vi se om det fungerar att lägga till routes...
+
+* [Länk till en testsida via routern](lek/test-page)
 
 
 
@@ -36,3 +54,12 @@ Du kan också lägga till vanlig PHP-kod i filer under katalogen `htdocs/`, de k
 
 * [Ett demo skript](demo/demo.php)
 * [PHP info, detaljer om installationen](demo/phpinfo.php)
+
+
+
+Ytterligare en testfil {#tf}
+---------------------------
+
+Vi testar att lägga in spelet "Guess my number" i `htdocs/demo/guess/index.php` och länka till det.
+
+* [Guess my number](demo/guess/index.php)
