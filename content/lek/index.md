@@ -32,7 +32,6 @@ Du kan skriva egna routes i filen `router/000_lek.php`, där finns några enklar
 * [Hello world (utanför me-sidan)](lek/hello-world)
 * [Hello world som JSON](lek/hello-world-json)
 * [Hello world (inuti me-sidan)](lek/hello-world-page)
-* [Länk till en testsida](lek/test-page)
 
 Du kan även skapa nya filer under `router/`, de läses in i ordning.
 
