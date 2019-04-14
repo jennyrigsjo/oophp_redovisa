@@ -108,6 +108,15 @@ h3 > a:hover {
     text-decoration: underline;
 }
 
+hr {
+    border: 1px solid @complementaryColor;
+}
+
+hr::after {
+    color: @complementaryColor;
+    background-color: @bodyBgColor;
+}
+
 p {
    margin-bottom: @magicNumber;
 }

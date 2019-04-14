@@ -5184,6 +5184,13 @@ h3 > a {
 h3 > a:hover {
   text-decoration: underline;
 }
+hr {
+  border: 1px solid #9400d3;
+}
+hr::after {
+  color: #9400d3;
+  background-color: #000000;
+}
 p {
   margin-bottom: 24px;
 }
@@ -5560,6 +5567,10 @@ article.blog {
 /* Sidebars */
 .region-sidebar-right .block {
   background-color: rgba(229, 26, 83, 0.1);
+}
+/* The game Guess my number */
+form.guess-button {
+  display: inline-block;
 }
 /* Blog */
 .blog-list-item .meta-header,
