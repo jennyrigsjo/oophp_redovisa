@@ -16,7 +16,7 @@ namespace Anax\View;
 
 <form method="post" action="make-guess" class="guess-button">
     <input type="number" name="guess" value="<?= $guess ?>">
-    <input type="submit" name="makeGuess" value="Make guess" <?= $tries <= 0 || strpos($result, 'CORRECT') !== false ? 'disabled' : '' ?>>
+    <input type="submit" name="makeGuess" value="Make guess" <?= $tries <= 0 || strpos($result, 'CORRECT!') !== false ? 'disabled' : '' ?>>
 </form>
 
 <form method="post" action="cheat" class="guess-button">
