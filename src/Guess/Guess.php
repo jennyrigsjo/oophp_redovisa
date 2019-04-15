@@ -9,7 +9,7 @@ class Guess
 {
     /**
      * @var int $number   The current secret number.
-     * @var int $tries    Number of tries a guess has been made.
+     * @var int $tries    Number of times a guess can be made.
      */
     private $number = null;
     private $tries = null;
@@ -19,9 +19,9 @@ class Guess
      * Constructor to initiate the object with current game settings,
      * if available. Randomize the current number if no value is sent in.
      *
-     * @param int $number The current secret number, default -1 to initiate
-     *                    the number from start.
-     * @param int $tries  Number of tries a guess has been made,
+     * @param int $number The current secret number, default -1 to generate
+     *                    a random number.
+     * @param int $tries  Number of times a guess can be made,
      *                    default 6.
      */
     public function __construct(int $number = -1, int $tries = 6)
