@@ -99,7 +99,7 @@ $app->router->post("guess/make-guess", function () use ($app) {
     if ($_POST["makeGuess"]) {
         try {
             $_SESSION["result"] = $game->makeGuess($_SESSION["guess"]);
-        } catch (Exception $e) {
+        } catch (Anri16\Guess\GuessException $e) {
             $class = get_class($e);
             $message = $e->getMessage();
             $_SESSION["exception"] = "Got exception {$class}: <b>{$message}</b>";
@@ -121,7 +121,7 @@ $app->router->post("guess/cheat", function () use ($app) {
     if ($_POST["cheat"]) {
         try {
             $_SESSION["number"] = $game->getNumber();
-        } catch (Exception $e) {
+        } catch (Anri16\Guess\GuessException $e) {
             $class = get_class($e);
             $message = $e->getMessage();
             $_SESSION["exception"] = "Got exception {$class}: <b>{$message}</b>";
