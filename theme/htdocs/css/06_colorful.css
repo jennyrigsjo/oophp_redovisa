@@ -5570,6 +5570,7 @@ article.blog {
 /* The game Guess my number */
 form.guess-button {
   display: inline-block;
+  margin-bottom: 24px;
 }
 /* Blog */
 .blog-list-item .meta-header,
