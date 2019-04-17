@@ -1,28 +1,37 @@
 <?php
+/**
+ * This file contains code to implement the class Guess.
+ * @author Jenny Rigsjö (anri16)
+ * @version 1.0.0
+ */
 
 namespace Anri16\Guess;
 
 /**
- * Guess my number, a class supporting the game through GET, POST and SESSION.
+ * A class for the game 'Guess my number'.
  */
 class Guess
 {
     /**
-     * @var int $number   The current secret number.
-     * @var int $tries    Number of times a guess can be made.
+     * @var int $number The current secret number.
      */
     private $number = null;
+
+    /**
+     * @var int $tries The number of times a guess can be made.
+     */
     private $tries = null;
 
 
     /**
      * Constructor to initiate the object with current game settings,
-     * if available. Randomize the current number if no value is sent in.
+     * if available. Randomize the current secret number if no value is sent in.
      *
      * @param int $number The current secret number, default -1 to generate
      *                    a random number.
      * @param int $tries  Number of times a guess can be made,
-     *                    default 6.
+     *                    default 6 times.
+     * @uses Guess::randomNumber() To randomize the secret number
      */
     public function __construct(int $number = -1, int $tries = 6)
     {
@@ -38,7 +47,7 @@ class Guess
 
     /**
      * Randomize the secret number between 1 and 100 to initiate a new game.
-     *
+     * @used-by Guess::__construct() to initiate the object with a random number
      * @return void
      */
     private function randomNumber()
@@ -49,7 +58,7 @@ class Guess
 
 
     /**
-     * Get number of tries left.
+     * Get the number of tries left.
      *
      * @return int as number of tries made.
      */
@@ -73,11 +82,11 @@ class Guess
 
 
     /**
-     * Make a guess, decrease remaining guesses and return a string stating
-     * if the guess was correct, too low or to high or if no guesses remains.
+     * Make a guess, decrease remaining number of guesses and return a string stating
+     * if the guess was correct, too low, too high and/or if no guesses remain.
      *
      * @throws GuessException when guessed number is out of bounds.
-     *
+     * @param int $number The guessed number
      * @return string to show the status of the guess made.
      */
     public function makeGuess($number)
