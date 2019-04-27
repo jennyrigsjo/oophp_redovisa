@@ -5,35 +5,6 @@
 //var_dump(array_keys(get_defined_vars()));
 
 /**
- * Terminate the current game session.
- * @return void
- */
-function endSession()
-{
-    // Unset all of the session variables.
-    $_SESSION = [];
-
-    // If it's desired to kill the session, also delete the session cookie.
-    // Note: This will destroy the session, and not just the session data!
-    if (ini_get("session.use_cookies")) {
-        $params = session_get_cookie_params();
-        setcookie(
-            session_name(),
-            '',
-            time() - 42000,
-            $params["path"],
-            $params["domain"],
-            $params["secure"],
-            $params["httponly"]
-        );
-    }
-
-    // Finally, destroy the session.
-    session_destroy();
-    //echo "The session is destroyed.";
-}
-
-/**
  * Initialize the game and redirect to play the game.
  */
 $app->router->get("guess/init", function () use ($app) {
