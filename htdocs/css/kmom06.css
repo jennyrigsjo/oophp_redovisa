@@ -5270,6 +5270,10 @@ ul {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.rm-desktop::after {
+  content: "";
+  flex: auto;
+}
 /* Flash image */
 .inner-wrap-flash {
   margin-bottom: 12px;
@@ -5562,6 +5566,58 @@ article.blog {
 form.guess-button {
   display: inline-block;
   margin-bottom: 24px;
+}
+/* The game Dice 100 */
+.dice-sprite {
+  display: inline-block;
+  padding: 0;
+  margin: 0 4px 0 0;
+  width: 32px;
+  height: 32px;
+  background: url(../img/dice-faces.jpg) no-repeat;
+}
+.dice-sprite.die-1 {
+  background-position: -160px 0;
+}
+.dice-sprite.die-2 {
+  background-position: -128px 0;
+}
+.dice-sprite.die-3 {
+  background-position: -96px 0;
+}
+.dice-sprite.die-4 {
+  background-position: -64px 0;
+}
+.dice-sprite.die-5 {
+  background-position: -32px 0;
+}
+.dice-sprite.die-6 {
+  background-position: 0 0;
+}
+.dice100 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.dice100-result {
+  max-width: 40%;
+}
+.dice100-status table,
+.dice100-status th,
+.dice100-status td {
+  border: 1px solid #333;
+}
+.dice100-status table {
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+.dice100-status th,
+.dice100-status td {
+  text-align: left;
+  padding: 5px;
+}
+.dice100-status td.score {
+  text-align: right;
 }
 /* Blog */
 .blog-list-item .meta-header,

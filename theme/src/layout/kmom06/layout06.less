@@ -76,6 +76,12 @@
     justify-content: space-between;
 }
 
+//align last row to grid/prevent space between last row items
+.rm-desktop::after {
+    content: "";
+    flex: auto;
+}
+
 
 
 /* Flash image */
