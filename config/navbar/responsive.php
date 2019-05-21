@@ -79,5 +79,10 @@ return [
             "url" => "dice100",
             "title" => "Spela Tärningsspelet 100",
         ],
+        [
+            "text" => "My Movie Database",
+            "url" => "movie/init",
+            "title" => "Filmdatabas",
+        ],
     ],
 ];
