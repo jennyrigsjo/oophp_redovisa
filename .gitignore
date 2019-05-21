@@ -5,3 +5,7 @@ memory::
 composer.lock
 
 doc/
+
+/config/database.php
+
+/src/Movie/config.php
