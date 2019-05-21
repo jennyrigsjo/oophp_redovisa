@@ -14,11 +14,17 @@ class DiceHandHistogram
 {
     /**
      * @var array $series  The numbers stored in sequence.
-     * @var int   $min    The lowest possible number.
-     * @var int   $max    The highest possible number.
      */
     private $series = [];
+
+    /**
+     * @var int   $min    The lowest possible number.
+     */
     private $min = null;
+
+    /**
+     * @var int   $max    The highest possible number.
+     */
     private $max = null;
 
     /**

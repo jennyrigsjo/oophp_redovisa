@@ -1,4 +1,9 @@
 <?php
+/**
+ * This file contains code to implement the class Dice100Controller.
+ * @author Jenny Rigsjö (anri16)
+ * @version 1.0.0
+ */
 
 namespace Anri16\Dice101;
 
