@@ -88,5 +88,10 @@ return [
             "url" => "movie/init",
             "title" => "Filmdatabas",
         ],
+        [
+            "text" => "MyTextFilter",
+            "url" => "textfilter",
+            "title" => "Demosida för MyTextFilter",
+        ],
     ],
 ];
