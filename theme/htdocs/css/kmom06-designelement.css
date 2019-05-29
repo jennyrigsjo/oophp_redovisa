@@ -5697,6 +5697,15 @@ form.dice100-button {
 .movie-table .fas {
   font-size: 1em;
 }
+/* MyTextFilter Demo */
+.textfilter-demo {
+  border: 2px dotted #e51a53;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+.textfilter-demo ul {
+  list-style-type: circle;
+}
 /* Blog */
 .blog-list-item .meta-header,
 .blog-post .meta-header {
