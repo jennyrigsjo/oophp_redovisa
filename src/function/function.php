@@ -1,5 +1,13 @@
 <?php
 /**
+ * This file contains general purpose functions which may be used by more than one class and/or file.
+ * @author Jenny Rigsjö (anri16)
+ * @version 1.0.0
+ */
+
+
+
+/**
  * Get value from GET variable or return default value.
  *
  * @param string $key     to look for

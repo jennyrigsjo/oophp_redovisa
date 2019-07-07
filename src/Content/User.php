@@ -8,7 +8,7 @@
 namespace Anri16\Content;
 
 /**
- * Content class for My Content Database.
+ * User class for My Content Database.
  */
 class User
 {
@@ -38,7 +38,8 @@ class User
     /**
      * Verify that a user password is correct.
      * @param string $name The name of the user.
-     * @return string $password The password of the user.
+     * @param string $password The password of the user.
+     * @return boolean A true or false evaluation of whether the password is correct.
      */
     public function passwordIsCorrect($name, $password)
     {

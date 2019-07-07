@@ -8,7 +8,7 @@
 namespace Anri16\Content;
 
 /**
- * Content class for My Content Database.
+ * General content class for My Content Database.
  */
 class Content
 {
@@ -40,7 +40,7 @@ class Content
      * @param string $orderby The column by which data should be sorted, default "id".
      * @param string $order The sorting order (ascending "asc" or descending "desc"), default "asc".
      * @param integer $hits The number of hits/items per page, default 4.
-     * @param integer $hits The target page, default 1.
+     * @param integer $page The target page, default 1.
      * @return string as the result of the query.
      */
     public function showAll($orderby = "id", $order = "asc", $hits = 4, $page = 1)
@@ -95,6 +95,7 @@ class Content
 
     /**
      * Add an item.
+     * @param string $title The name/title of the item.
      * @return int as the ID of the last row insertion.
      */
     public function create($title)
