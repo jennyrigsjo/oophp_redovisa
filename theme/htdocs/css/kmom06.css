@@ -5696,6 +5696,46 @@ form.dice100-button {
 .textfilter-demo ul {
   list-style-type: circle;
 }
+/* My Content Database */
+.cms-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cms-wrapper ul {
+  list-style-type: circle;
+}
+.cms-table {
+  border-collapse: collapse;
+}
+.cms-table th {
+  text-align: left;
+}
+.cms-table tr.cms-row:hover {
+  background-color: #e51a53;
+}
+.cms-table td {
+  padding: 10px;
+}
+.cms-table .fas {
+  margin: 0 5px;
+}
+.cms-reset {
+  padding: 5px;
+  border: 2px dotted green;
+  overflow: hidden;
+}
+.cms-error {
+  padding: 5px;
+  border: 2px dotted red;
+}
+.cms-ok {
+  padding: 5px;
+  border: 2px dotted green;
+}
+.cms-login {
+  margin-left: 100px;
+}
 /* Blog */
 .blog-list-item .meta-header,
 .blog-post .meta-header {
