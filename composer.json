@@ -10,8 +10,8 @@
             "Anri16\\": "src/"
         },
         "files": [
-            "src/Movie/function.php",
-            "src/Movie/config.php"
+            "src/function/function.php",
+            "src/config/config.php"
         ]
     },
     "require": {
