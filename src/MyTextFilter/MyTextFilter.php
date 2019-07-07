@@ -69,7 +69,8 @@ class MyTextFilter
      */
     public function parse($text, $filter = "")
     {
-        //$text = strip_tags($text);
+        $text = trim($text);
+        $text = strip_tags($text, "<br>");
         $filter = explode(",", $filter);
         foreach ($filter as $name) {
             if (array_key_exists($name, $this->methods)) {
