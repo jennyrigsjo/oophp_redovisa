@@ -94,5 +94,10 @@ return [
             "url" => "textfilter",
             "title" => "Demosida för MyTextFilter",
         ],
+        [
+            "text" => "My Content Database",
+            "url" => "content",
+            "title" => "Ett Content Management System",
+        ],
     ],
 ];
