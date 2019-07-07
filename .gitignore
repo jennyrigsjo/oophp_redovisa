@@ -8,4 +8,5 @@ doc/
 
 /config/database.php
 
-/src/Movie/config.php
+
+/src/config/config.php
