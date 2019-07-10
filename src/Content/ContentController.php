@@ -138,10 +138,12 @@ class ContentController implements AppInjectableInterface
 
         try {
             validateSort($orderby, $order);
+
             verifyIsNumeric($hits);
             validateHitsRange($hits);
+
             verifyIsNumeric($page);
-            validatePageRange($page, $max);
+            validatePageNumber($page, $max);
         } catch (\Anax\Database\Exception\Exception $e) {
             $this->app->session->set("exception", $e->getMessage());
             $orderby = "id";

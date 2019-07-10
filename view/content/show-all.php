@@ -49,6 +49,6 @@ if (!$resultset) {
 
 <p>Pages:
     <?php for ($i = 1; $i < $pages + 1; $i++) { ?>
-        <?= page("show-all", $hits, $i, $page); ?>
+        <?= pageLink("show-all", $hits, $i, $page); ?>
     <?php } ?>
 </p>

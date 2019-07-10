@@ -158,7 +158,7 @@ function paginate($route, $hits, $currentHits = null)
  *
  * @return string with a link to a specific page.
  */
-function page($route, $hits, $page, $currentPage = null)
+function pageLink($route, $hits, $page, $currentPage = null)
 {
     if ($page === intval($currentPage)) {
         return "<u><a class='cms-link' href='{$route}?hits={$hits}&page={$page}'>{$page}</a></u>";
@@ -291,7 +291,7 @@ function validateHitsRange($hits)
  * @throws Exception if the number is out of range.
  *
  */
-function validatePageRange($page, $max)
+function validatePageNumber($page, $max)
 {
     if (!($page > 0 && $page <= $max)) {
         $page = esc($page);
